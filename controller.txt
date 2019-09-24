@@ -4,4 +4,10 @@
 4. Go to Device Boostrapping page, upload a QRCode
 5. Click "Bootstrap" button.
 6. You can see the device in Device List and Service List page.
-7. Use NDN Ping to send out Interests (let me check for the details ......)
+7. Use NDN Ping to send out Interests
+  - Name: /ndn-iot/%0B/<device id>/%00 (unicast) or /ndn-iot/%0B/%00 (multicast)
+      (If you see "/ndn-iot/%01/%0B/device-47787" on the Service List, write "/ndn-iot/%0B/device-47787/%00")
+  - Application Parameter: Write the lightness you want
+  - Signed Interest: True
+      (If it's set to False, the client should say "No signature. Ignore the command." and ignore that Interest.)
+8. If the controller crashes, ask all clients to restart and then go back to step 5. There's no need to redo the QR code.

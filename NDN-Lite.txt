@@ -1,3 +1,4 @@
+(Before start, the Network Adaptor should be set to Bridge manually)
 cd ~/Desktop/ndn-iot-package-over-posix/build
 make -j2
 ./examples/tutorial-gen-new-shared-info
