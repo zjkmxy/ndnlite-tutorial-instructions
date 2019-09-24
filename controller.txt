@@ -1,0 +1,7 @@
+1. nfd-start
+2. python3 app.py
+3. Open http://localhost:5001
+4. Go to Device Boostrapping page, upload a QRCode
+5. Click "Bootstrap" button.
+6. You can see the device in Device List and Service List page.
+7. Use NDN Ping to send out Interests (let me check for the details ......)

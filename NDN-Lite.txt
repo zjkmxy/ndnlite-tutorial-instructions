@@ -1,0 +1,9 @@
+cd ~/Desktop/ndn-iot-package-over-posix/build
+make -j2
+./examples/tutorial-gen-new-shared-info
+cd ..
+python3 QR_encoder.py
+(Open ndn-iot-package-over-posix/shared_info.png from Deaktop)
+cd build
+./examples/tutorial-app
+
